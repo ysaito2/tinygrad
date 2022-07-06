@@ -48,7 +48,7 @@ int main (){
 					for (int x = bx; x < BLOCK; x++){
 						float acc = 0;
 						for (int k =0; k<N; k++){
-							acc += A[by+y][k] * B[bx+x][k];
+							acc += A[by+y][k] * B[k][bx+x];
 						}
 
 						tc[y][x] = acc;
@@ -99,5 +99,3 @@ int main (){
 
 	return 0;
 }
-
-
